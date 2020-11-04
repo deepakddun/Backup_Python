@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  second-app:
+    build: .
+    ports:
+    - "8000:8000"
+    networks:
+      - app-net
+    depends_on:
+      - databases
+    secrets:
+      - source: postgres-connection
+        target: ./secrets.json
+
+
+  databases:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    expose:
+      - "3306"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    external:
+      name: nat
+
+
+secrets:
+  postgres-connection:
+    file: ./secrets.json

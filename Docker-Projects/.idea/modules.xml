@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Docker-Projects.iml" filepath="$PROJECT_DIR$/.idea/Docker-Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Docker-Python/.idea/Docker-Python.iml" filepath="$PROJECT_DIR$/../Docker-Python/.idea/Docker-Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DockerComposeFirstExample/.idea/DockerComposeFirstExample.iml" filepath="$PROJECT_DIR$/../DockerComposeFirstExample/.idea/DockerComposeFirstExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python-MySql/.idea/Python-MySql.iml" filepath="$PROJECT_DIR$/../Python-MySql/.idea/Python-MySql.iml" />
+    </modules>
+  </component>
+</project>

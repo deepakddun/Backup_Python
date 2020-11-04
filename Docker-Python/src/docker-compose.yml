@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+
+  first-app:
+    build: .
+    ports:
+    - "8014:8000"
+    networks:
+      - app-net
+
+
+
+networks:
+  app-net:
+    external:
+      name: nat
+
